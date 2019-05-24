@@ -9,7 +9,7 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - ------------- &lt;#delegate#&gt; --------------</string>
+	<string>#pragma mark - &lt;#标注#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>ADEACC8A-01F6-41AD-88D8-7ADC8D1859B7</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>ppd</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>代理分隔</string>
+	<string>标记分隔</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

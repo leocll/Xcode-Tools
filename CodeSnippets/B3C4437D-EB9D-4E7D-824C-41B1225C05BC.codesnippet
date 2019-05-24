@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - &lt;#标注#&gt;</string>
+	<string>#pragma mark &lt;#标注#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B3C4437D-EB9D-4E7D-824C-41B1225C05BC</string>
 	<key>IDECodeSnippetLanguage</key>

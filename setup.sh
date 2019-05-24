@@ -13,7 +13,12 @@ if [[ $? -ne 0 ]]; then
 	[[ -d "${XCS_PATH}.backup.bk" ]] && mv ${XCS_PATH}.backup.bk ${XCS_PATH}.backup
 	echo -e "\033[31mFailed to setup ${XCS_NAME}.\033[0m"
 else
-	[[ -d "${XCS_PATH}.backup.bk" ]] && rm -rf ${XCS_PATH}.backup.bk
+	if [[ -d "${XCS_PATH}.backup.bk" ]] && [[ ! -L "${XCS_PATH}.backup.bk" ]] \
+		&& [[ -d "${XCS_PATH}.backup" ]] && [[ -L "${XCS_PATH}.backup" ]]; then
+		rm ${XCS_PATH}.backup && mv ${XCS_PATH}.backup.bk ${XCS_PATH}.backup
+	else
+		[[ -d "${XCS_PATH}.backup.bk" ]] && rm -rf ${XCS_PATH}.backup.bk
+	fi
 	echo -e "\033[32mSetup ${XCS_NAME} successfully, please restart Xcode!\033[0m"
 fi
 
