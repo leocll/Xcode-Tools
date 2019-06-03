@@ -11,7 +11,7 @@ ln -s ${SRC_HOME}/${XCS_NAME} ${XCS_PATH}
 if [[ $? -ne 0 ]]; then
 	[[ -d "${XCS_PATH}.backup" ]] && mv ${XCS_PATH}.backup ${XCS_PATH}
 	[[ -d "${XCS_PATH}.backup.bk" ]] && mv ${XCS_PATH}.backup.bk ${XCS_PATH}.backup
-	echo -e "\033[31mFailed to setup ${XCS_NAME}.\033[0m"
+	echo -e "\033[31mFailed to set up ${XCS_NAME}.\033[0m"
 else
 	if [[ -d "${XCS_PATH}.backup.bk" ]] && [[ ! -L "${XCS_PATH}.backup.bk" ]] \
 		&& [[ -d "${XCS_PATH}.backup" ]] && [[ -L "${XCS_PATH}.backup" ]]; then
@@ -19,7 +19,7 @@ else
 	else
 		[[ -d "${XCS_PATH}.backup.bk" ]] && rm -rf ${XCS_PATH}.backup.bk
 	fi
-	echo -e "\033[32mSetup ${XCS_NAME} successfully, please restart Xcode!\033[0m"
+	echo -e "\033[32mSet up ${XCS_NAME} successfully, please restart Xcode!\033[0m"
 fi
 
 

@@ -1,16 +1,30 @@
-# Xcode_CodeSnippets
+# Xcode Tools
 
-#### Xcode代码块儿
-
-##### 使用方法
 ```
 git clone https://github.com/leocll/Xcode_CodeSnippets
-cd Xcode_CodeSnippets
-运行setup.sh
 ```
 
-##### 代码块儿路径
+### Code Snippets
+- **Path**
 ```
 ~/Library/Developer/Xcode/UserData/CodeSnippets
 ```
 
+- **Use info**
+```
+git clone https://github.com/leocll/Xcode_CodeSnippets
+bash ./Xcode_CodeSnippets/CodeSnippets/setup.sh
+```
+
+### Code Templates
+- **Path**
+- iOS
+```
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates
+``` 
+
+- **Use info**
+```
+git clone https://github.com/leocll/Xcode_CodeSnippets
+bash ./Xcode_CodeSnippets/CodeTemplates/setup.sh
+```
