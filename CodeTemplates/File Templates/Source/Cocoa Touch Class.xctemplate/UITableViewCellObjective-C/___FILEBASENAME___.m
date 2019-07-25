@@ -15,6 +15,7 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self createUI];
     }
+    return self;
 }
 
 - (void)createUI {}

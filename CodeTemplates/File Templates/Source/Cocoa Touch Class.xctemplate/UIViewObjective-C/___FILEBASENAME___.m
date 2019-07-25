@@ -14,6 +14,7 @@
     if (self) {
         [self createUI];
     }
+    return self;
 }
 
 - (void)createUI {}

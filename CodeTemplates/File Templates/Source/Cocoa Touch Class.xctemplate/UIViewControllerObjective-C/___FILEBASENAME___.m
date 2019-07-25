@@ -9,14 +9,14 @@
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
 #pragma mark - life cycle
-//- (void)viewWillAppear:(BOOL)animated {}
-
-//- (void)viewDidAppear:(BOOL)animated {}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
 }
+
+//- (void)viewWillAppear:(BOOL)animated {}
+
+//- (void)viewDidAppear:(BOOL)animated {}
 
 //- (void)viewWillDisappear:(BOOL)animated {}
 

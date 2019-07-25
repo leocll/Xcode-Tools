@@ -11,8 +11,6 @@
 static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark - life cycle
-//- (void)viewWillAppear:(BOOL)animated {}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -21,9 +19,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
+
+//- (void)viewWillAppear:(BOOL)animated {}
 
 //- (void)dealloc {}
 
